@@ -1,82 +1,203 @@
-/* =============================================
-   Venetsanos Restaurant – Shared Styles
-   Mobile-first, QR-code friendly
-   ============================================= */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap");
 
-* {
+:root {
+  --bg: #f8f4ec;
+  --surface: rgba(255, 252, 245, 0.92);
+  --surface-strong: #fffdf8;
+  --text: #1f2933;
+  --muted: #5c6770;
+  --blue: #143a52;
+  --blue-soft: #1f5677;
+  --blue-deep: #0d2433;
+  --wheat: #d8b67a;
+  --wheat-soft: #ead8b6;
+  --line: rgba(20, 58, 82, 0.12);
+  --danger: #b3473f;
+  --success: #3d7f5f;
+  --shadow: 0 18px 50px rgba(12, 23, 32, 0.1);
+  --shadow-soft: 0 10px 30px rgba(12, 23, 32, 0.08);
+  --radius-xl: 28px;
+  --radius-lg: 20px;
+  --radius-md: 14px;
+  --radius-sm: 10px;
+  --content-width: 1040px;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: "Georgia", serif;
-  background-color: #fdf8f2;
-  color: #2c2c2c;
-  font-size: 16px;
+html {
+  scroll-behavior: smooth;
 }
 
-/* ---------- HEADER ---------- */
+body {
+  font-family: "Inter", sans-serif;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(216, 182, 122, 0.18),
+      transparent 30%
+    ),
+    linear-gradient(180deg, #fbf7f0 0%, var(--bg) 40%, #f2ebe0 100%);
+  color: var(--text);
+  line-height: 1.65;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a,
+button {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 3px solid rgba(216, 182, 122, 0.95);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px rgba(20, 58, 82, 0.16);
+}
+
 header {
-  background-color: #1a1a2e;
-  color: #f0c040;
-  text-align: center;
-  padding: 28px 20px 20px;
   position: relative;
+  overflow: hidden;
+  padding: 3.5rem 1.25rem 2.25rem;
+  background:
+    linear-gradient(135deg, rgba(13, 36, 51, 0.97), rgba(20, 58, 82, 0.92)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent);
+  color: #f8f3ea;
+  text-align: center;
+  border-bottom: 1px solid rgba(216, 182, 122, 0.28);
+}
+
+header::before,
+header::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  pointer-events: none;
+}
+
+header::before {
+  width: 320px;
+  height: 320px;
+  top: -150px;
+  right: -110px;
+  background: radial-gradient(
+    circle,
+    rgba(216, 182, 122, 0.28),
+    transparent 70%
+  );
+}
+
+header::after {
+  width: 240px;
+  height: 240px;
+  left: -110px;
+  bottom: -120px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.08),
+    transparent 72%
+  );
 }
 
 header h1 {
-  font-size: 2rem;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3rem, 8vw, 5.4rem);
+  line-height: 0.95;
+  letter-spacing: 0.04em;
+  font-weight: 700;
 }
 
-header p.tagline {
-  font-size: 0.9rem;
-  color: #ccc;
-  margin-top: 6px;
-  font-style: italic;
+header .tagline {
+  position: relative;
+  z-index: 1;
+  max-width: 42rem;
+  margin: 0.95rem auto 0;
+  color: rgba(248, 243, 234, 0.82);
+  font-size: 1rem;
+  letter-spacing: 0.02em;
 }
 
-/* ---------- LANGUAGE TOGGLE ---------- */
 .lang-toggle {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  display: flex;
-  gap: 6px;
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 1.5rem;
+  padding: 0.35rem;
+  border: 1px solid rgba(216, 182, 122, 0.28);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
 }
 
 .lang-toggle button {
-  background: transparent;
-  border: 2px solid #f0c040;
-  color: #f0c040;
-  padding: 4px 10px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  cursor: pointer;
-  font-family: "Georgia", serif;
-  transition: all 0.2s;
+  padding: 0.62rem 0.95rem;
+  border-radius: 999px;
+  color: rgba(248, 243, 234, 0.86);
+  font-weight: 600;
+  line-height: 1;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-.lang-toggle button.active,
 .lang-toggle button:hover {
-  background: #f0c040;
-  color: #1a1a2e;
-  font-weight: bold;
+  color: #fff;
+  transform: translateY(-1px);
 }
 
-/* ---------- CATEGORY NAV ---------- */
+.lang-toggle button.active {
+  color: var(--blue-deep);
+  background: linear-gradient(180deg, #f1ddb2 0%, var(--wheat) 100%);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+}
+
 nav.category-nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
   display: flex;
-  overflow-x: auto;
-  background: #f0c040;
-  padding: 10px 12px;
-  gap: 8px;
+  gap: 0.75rem;
+  align-items: center;
   justify-content: flex-start;
-  flex-wrap: nowrap;
-  -webkit-overflow-scrolling: touch;
+  padding: 0.9rem 1rem;
+  overflow-x: auto;
+  white-space: nowrap;
   scrollbar-width: none;
+  background: rgba(248, 244, 236, 0.82);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(20, 58, 82, 0.1);
+  box-shadow: 0 10px 24px rgba(12, 23, 32, 0.05);
 }
 
 nav.category-nav::-webkit-scrollbar {
@@ -84,120 +205,294 @@ nav.category-nav::-webkit-scrollbar {
 }
 
 nav.category-nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.72rem 1.1rem;
+  border: 1px solid rgba(20, 58, 82, 0.08);
+  border-radius: 999px;
+  background: rgba(255, 253, 248, 0.95);
+  color: var(--blue);
   text-decoration: none;
-  color: #1a1a2e;
-  font-weight: bold;
-  padding: 7px 16px;
-  border-radius: 20px;
-  background: #fff;
-  font-size: 0.85rem;
-  white-space: nowrap;
-  transition: all 0.2s;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  font-size: 0.95rem;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(12, 23, 32, 0.06);
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-nav.category-nav a:hover {
-  background: #1a1a2e;
-  color: #f0c040;
+nav.category-nav a:hover,
+nav.category-nav a:focus-visible {
+  background: var(--blue);
+  color: #fff8ef;
+  border-color: var(--blue);
+  transform: translateY(-1px);
+  box-shadow: 0 12px 26px rgba(20, 58, 82, 0.18);
 }
 
-/* ---------- MENU SECTIONS ---------- */
 .section {
-  padding: 28px 20px;
-  max-width: 700px;
-  margin: auto;
-  border-bottom: 1px solid #eee;
+  width: min(calc(100% - 1.5rem), var(--content-width));
+  margin: 1.1rem auto;
+  padding: 1.3rem;
+  background: linear-gradient(
+    180deg,
+    var(--surface-strong) 0%,
+    var(--surface) 100%
+  );
+  border: 1px solid rgba(20, 58, 82, 0.08);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow);
+}
+
+.section:first-of-type {
+  margin-top: 1.35rem;
 }
 
 .section:last-of-type {
-  border-bottom: none;
+  margin-bottom: 2rem;
 }
 
 .section h2 {
-  font-size: 1.4rem;
-  color: #1a1a2e;
-  border-bottom: 2px solid #f0c040;
-  padding-bottom: 8px;
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--line);
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--blue-deep);
 }
 
-/* ---------- MENU ITEMS ---------- */
 .menu-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 18px;
-  gap: 12px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: start;
+  padding: 1rem 0;
+  border-bottom: 1px dashed rgba(20, 58, 82, 0.14);
+}
+
+.menu-item:last-child {
+  border-bottom: 0;
+  padding-bottom: 0.2rem;
 }
 
 .menu-item .info h3 {
-  font-size: 1rem;
-  font-weight: bold;
-  line-height: 1.3;
+  margin: 0;
+  color: var(--blue);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.7rem;
+  line-height: 1.05;
+  font-weight: 700;
 }
 
 .menu-item .info p {
-  font-size: 0.83rem;
-  color: #666;
-  margin-top: 4px;
-  line-height: 1.4;
+  margin: 0.42rem 0 0;
+  color: var(--muted);
+  font-size: 0.96rem;
+  max-width: 58ch;
 }
 
 .menu-item .info .allergens {
-  font-size: 0.75rem;
-  color: #c0392b;
-  margin-top: 4px;
+  color: var(--danger);
+  font-size: 0.84rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
 }
 
 .menu-item .price {
-  font-weight: bold;
-  color: #c0392b;
-  white-space: nowrap;
-  font-size: 1rem;
-  padding-top: 2px;
+  align-self: start;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 5.25rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #f4e1bb 0%, var(--wheat) 100%);
+  color: var(--blue-deep);
+  font-weight: 700;
+  font-size: 0.98rem;
+  line-height: 1;
+  box-shadow: 0 10px 18px rgba(216, 182, 122, 0.26);
 }
 
-/* ---------- BADGE ---------- */
 .badge {
-  display: inline-block;
-  font-size: 0.65rem;
-  background: #27ae60;
-  color: white;
-  border-radius: 10px;
-  padding: 2px 7px;
-  margin-left: 6px;
-  vertical-align: middle;
-  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
+  margin-left: 0.45rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(61, 127, 95, 0.12);
+  color: var(--success);
+  font-family: "Inter", sans-serif;
+  font-size: 0.68rem;
+  line-height: 1;
+  letter-spacing: 0.06em;
+  font-weight: 700;
   text-transform: uppercase;
+  vertical-align: middle;
 }
 
 .badge.spicy {
-  background: #e74c3c;
+  background: rgba(179, 71, 63, 0.12);
+  color: var(--danger);
 }
 
-/* ---------- FOOTER ---------- */
 footer {
+  padding: 2rem 1.25rem 2.5rem;
   text-align: center;
-  padding: 22px 20px;
-  background: #1a1a2e;
-  color: #aaa;
-  font-size: 0.8rem;
+  color: var(--muted);
+  font-size: 0.92rem;
 }
 
 footer a {
-  color: #f0c040;
+  color: var(--blue);
   text-decoration: none;
+  font-weight: 600;
 }
 
-/* ---------- RESPONSIVE ---------- */
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 1.6rem;
+footer a:hover,
+footer a:focus-visible {
+  color: var(--blue-soft);
+}
+
+@media (min-width: 700px) {
+  header {
+    padding: 4.5rem 2rem 2.9rem;
   }
-  .section h2 {
-    font-size: 1.2rem;
+
+  .lang-toggle {
+    position: absolute;
+    top: 1.35rem;
+    right: 1.35rem;
+    margin-bottom: 0;
   }
+
+  nav.category-nav {
+    justify-content: center;
+    padding-inline: 1.5rem;
+  }
+
+  .section {
+    padding: 1.8rem 2rem;
+  }
+
+  .menu-item {
+    gap: 1.35rem;
+    padding: 1.15rem 0;
+  }
+
   .menu-item .info h3 {
-    font-size: 0.95rem;
+    font-size: 1.95rem;
+  }
+
+  .menu-item .info p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 980px) {
+  :root {
+    --content-width: 1120px;
+  }
+
+  body {
+    font-size: 17px;
+  }
+
+  .section {
+    padding: 2rem 2.3rem;
+  }
+
+  .section h2 {
+    margin-bottom: 1.4rem;
+  }
+
+  nav.category-nav a {
+    padding-inline: 1.25rem;
+  }
+}
+
+@media (max-width: 699px) {
+  .lang-toggle {
+    width: fit-content;
+  }
+
+  .menu-item {
+    grid-template-columns: 1fr;
+    gap: 0.72rem;
+  }
+
+  .menu-item .price {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 520px) {
+  header {
+    padding-top: 2.8rem;
+  }
+
+  header h1 {
+    letter-spacing: 0.02em;
+  }
+
+  header .tagline {
+    font-size: 0.94rem;
+  }
+
+  nav.category-nav {
+    gap: 0.6rem;
+    padding: 0.8rem 0.85rem;
+  }
+
+  nav.category-nav a {
+    min-height: 40px;
+    padding: 0.62rem 0.92rem;
+    font-size: 0.88rem;
+  }
+
+  .section {
+    width: min(calc(100% - 1rem), var(--content-width));
+    padding: 1.1rem 1rem;
+    border-radius: 22px;
+  }
+
+  .section h2 {
+    font-size: 1.9rem;
+  }
+
+  .menu-item .info h3 {
+    font-size: 1.48rem;
+  }
+
+  .menu-item .info p {
+    font-size: 0.92rem;
+  }
+
+  .badge {
+    margin-top: 0.35rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
   }
 }
