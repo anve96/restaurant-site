@@ -1,0 +1,46 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Install and build menu app",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"install",
+				";",
+				"npm",
+				"run",
+				"build"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "Check Node commands",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-NoProfile",
+				"-Command",
+				"Get-Command npm.cmd,node.exe -ErrorAction SilentlyContinue | Select-Object Name,Source | Format-Table"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "Check standard Node path",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-NoProfile",
+				"-Command",
+				"if (Test-Path 'C:\\Program Files\\nodejs\\npm.cmd') { Write-Output 'npm-found' } else { Write-Output 'npm-missing' }"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "Check npm path directly",
+			"type": "shell",
+			"command": "if (Test-Path \"C:\\Program Files\\nodejs\\npm.cmd\") { Write-Output \"npm-found\" } else { Write-Output \"npm-missing\" }",
+			"isBackground": false
+		}
+	]
+}

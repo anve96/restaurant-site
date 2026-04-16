@@ -1,0 +1,421 @@
+{
+  "restaurant": {
+    "name": "Βενετσάνος",
+    "year": 2026,
+    "tagline": {
+      "el": "Απο το 1970",
+      "en": "Since 1970"
+    },
+    "phone": "27410 37411",
+    "phoneLink": "+30 2741037411",
+    "footerNote": {
+      "el": "Τιμές συμπεριλαμβάνουν ΦΠΑ",
+      "en": "All prices include VAT"
+    }
+  },
+  "navigationLabel": {
+    "el": "Κατηγορίες μενού",
+    "en": "Menu categories"
+  },
+  "sections": [
+    {
+      "id": "salads",
+      "title": {
+        "el": "Σαλάτες",
+        "en": "Salads"
+      },
+      "items": [
+        {
+          "id": "tomato-salad",
+          "name": {
+            "el": "Ντοματοσαλάτα",
+            "en": "Tomato Salad"
+          },
+          "description": {
+            "el": "Ντομάτα ξεφλουδισμένη, ελιές",
+            "en": "Tomato peeled, olives"
+          },
+          "price": "€6.00"
+        },
+        {
+          "id": "greek-salad",
+          "name": {
+            "el": "Χωριάτικη",
+            "en": "Greek Salad"
+          },
+          "description": {
+            "el": "Ντομάτα, αγγούρι, ελιές, φέτα & κρεμμύδι",
+            "en": "Tomato, cucumber, olives, feta & onion"
+          },
+          "allergens": {
+            "el": "⚠️ Περιέχει γαλακτοκομικά",
+            "en": "⚠️ Contains dairy"
+          },
+          "price": "€7.00"
+        },
+        {
+          "id": "Cabbage salad",
+          "name": {
+            "el": "Λαχανοσαλάτα",
+            "en": "Cabbage Salad"
+          },
+          "description": {
+            "el": "Λάχανο, καρότο",
+            "en": "Cabbage, carrot"
+          },
+          "price": "€5.00"
+        }
+      ]
+    },
+    {
+      "id": "starters",
+      "title": {
+        "el": "Ορεκτικά",
+        "en": "Appetizers"
+      },
+      "items": [
+        {
+          "id": "tzatziki",
+          "name": {
+            "el": "Τζατζίκι",
+            "en": "Tzatziki"
+          },
+          "description": {
+            "el": "Γιαούρτι, αγγούρι, σκόρδο & φρέσκο άνηθο",
+            "en": "Yogurt, cucumber, garlic & fresh dill"
+          },
+          "allergens": {
+            "el": "⚠️ Περιέχει γαλακτοκομικά",
+            "en": "⚠️ Contains dairy"
+          },
+          "price": "€4.50"
+        },
+        {
+          "id": "saganaki",
+          "name": {
+            "el": "Σαγανάκι",
+            "en": "Saganaki"
+          },
+          "description": {
+            "el": "Τηγανητό ελληνικό τυρί με λεμόνι",
+            "en": "Fried Greek cheese with lemon"
+          },
+          "allergens": {
+            "el": "⚠️ Περιέχει γαλακτοκομικά, γλουτένη",
+            "en": "⚠️ Contains dairy, gluten"
+          },
+          "price": "€6.00"
+        },
+        {
+          "id": "dolmades",
+          "name": {
+            "el": "Ντολμάδες",
+            "en": "Dolmades"
+          },
+          "description": {
+            "el": "Ντολμαδάκια γιαλαντζί με ρύζι & μυρωδικά",
+            "en": "Stuffed vine leaves with rice & herbs"
+          },
+          "price": "€5.50"
+        },
+        {
+          "id": "taramosalata",
+          "name": {
+            "el": "Ταραμοσαλάτα",
+            "en": "Taramosalata"
+          },
+          "description": {
+            "el": "Αυθεντική ταραμοσαλάτα με πιτούλες",
+            "en": "Traditional fish roe dip with pita bread"
+          },
+          "allergens": {
+            "el": "⚠️ Περιέχει ψάρι, γλουτένη",
+            "en": "⚠️ Contains fish, gluten"
+          },
+          "price": "€5.00"
+        },
+        {
+          "id": "marinated-octopus",
+          "name": {
+            "el": "Χταπόδι Ξυδάτο",
+            "en": "Marinated Octopus"
+          },
+          "description": {
+            "el": "Μαριναρισμένο χταπόδι με ξύδι & ελαιόλαδο",
+            "en": "Marinated octopus with vinegar & olive oil"
+          },
+          "price": "€8.00",
+          "badge": {
+            "label": {
+              "el": "Επιλογή Σεφ",
+              "en": "Chef's Selection"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "mains",
+      "title": {
+        "el": "Κυρίως Πιάτα",
+        "en": "Main Dishes"
+      },
+      "items": [
+        {
+          "id": "moussaka",
+          "name": {
+            "el": "Μουσακάς",
+            "en": "Moussaka"
+          },
+          "description": {
+            "el": "Μελιτζάνα, κιμάς & μπεσαμέλ",
+            "en": "Layered eggplant, minced meat & béchamel"
+          },
+          "allergens": {
+            "el": "⚠️ Περιέχει γαλακτοκομικά, αυγά, γλουτένη",
+            "en": "⚠️ Contains dairy, eggs, gluten"
+          },
+          "price": "€13.00",
+          "badge": {
+            "label": {
+              "el": "Παράδοση",
+              "en": "Heritage"
+            }
+          }
+        },
+        {
+          "id": "pastitsio",
+          "name": {
+            "el": "Παστίτσιο",
+            "en": "Pastitsio"
+          },
+          "description": {
+            "el": "Μακαρόνια με κιμά & μπεσαμέλ φούρνου",
+            "en": "Baked pasta with minced meat & béchamel"
+          },
+          "allergens": {
+            "el": "⚠️ Περιέχει γλουτένη, γαλακτοκομικά, αυγά",
+            "en": "⚠️ Contains gluten, dairy, eggs"
+          },
+          "price": "€12.00"
+        },
+        {
+          "id": "shrimp-saganaki",
+          "name": {
+            "el": "Γαρίδες Σαγανάκι",
+            "en": "Shrimp Saganaki"
+          },
+          "description": {
+            "el": "Γαρίδες σε σάλτσα ντομάτας, φέτα & μπαχαρικά",
+            "en": "Prawns in tomato sauce, feta & spices"
+          },
+          "allergens": {
+            "el": "⚠️ Περιέχει θαλασσινά, γαλακτοκομικά",
+            "en": "⚠️ Contains shellfish, dairy"
+          },
+          "price": "€15.00",
+          "badge": {
+            "variant": "spicy",
+            "label": {
+              "el": "Πικάντικο",
+              "en": "Piquant"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "grilled",
+      "title": {
+        "el": "Ψητά",
+        "en": "Grilled"
+      },
+      "items": [
+        {
+          "id": "grilled-octopus",
+          "name": {
+            "el": "Ψητό Χταπόδι",
+            "en": "Grilled Octopus"
+          },
+          "description": {
+            "el": "Σερβίρεται με κάπαρη και ελαιόλαδο",
+            "en": "Grilled, served with capers and olive oil"
+          },
+          "price": "€16.00"
+        },
+        {
+          "id": "lamb-chops",
+          "name": {
+            "el": "Παϊδάκια Αρνίσια",
+            "en": "Lamb Chops"
+          },
+          "description": {
+            "el": "Μαριναρισμένα σε λεμόνι, ρίγανη & σκόρδο",
+            "en": "Marinated in lemon, oregano & garlic"
+          },
+          "price": "€18.00",
+          "badge": {
+            "label": {
+              "el": "Επιλογή Σεφ",
+              "en": "Chef's Selection"
+            }
+          }
+        },
+        {
+          "id": "chicken-souvlaki",
+          "name": {
+            "el": "Σουβλάκι Κοτόπουλο",
+            "en": "Chicken Souvlaki"
+          },
+          "description": {
+            "el": "Κοτόπουλο σχάρας με πιτούλα, τζατζίκι & λαχανικά",
+            "en": "Grilled chicken skewer with pita, tzatziki & vegetables"
+          },
+          "allergens": {
+            "el": "⚠️ Περιέχει γλουτένη, γαλακτοκομικά",
+            "en": "⚠️ Contains gluten, dairy"
+          },
+          "price": "€11.00"
+        }
+      ]
+    },
+    {
+      "id": "drinks",
+      "title": {
+        "el": "Ποτά",
+        "en": "Drinks"
+      },
+      "items": [
+        {
+          "id": "house-wine",
+          "name": {
+            "el": "Κρασί (ποτήρι)",
+            "en": "House Wine (glass)"
+          },
+          "description": {
+            "el": "Κόκκινο / Λευκό / Ροζέ",
+            "en": "Red / White / Rosé"
+          },
+          "price": "€4.00"
+        },
+        {
+          "id": "ouzo",
+          "name": {
+            "el": "Ούζο",
+            "en": "Ouzo"
+          },
+          "description": {
+            "el": "Παραδοσιακό ελληνικό ούζο",
+            "en": "Traditional Greek spirit"
+          },
+          "price": "€3.50"
+        },
+        {
+          "id": "beer",
+          "name": {
+            "el": "Μπύρα",
+            "en": "Beer"
+          },
+          "description": {
+            "el": "Fix, Mythos ή εισαγωγής",
+            "en": "Fix, Mythos or imported"
+          },
+          "price": "€3.50"
+        },
+        {
+          "id": "soft-drinks",
+          "name": {
+            "el": "Αναψυκτικά",
+            "en": "Soft Drinks"
+          },
+          "description": {
+            "el": "Cola, Fanta, Sprite, Νερό",
+            "en": "Cola, Fanta, Sprite, Water"
+          },
+          "price": "€2.50"
+        },
+        {
+          "id": "greek-coffee",
+          "name": {
+            "el": "Ελληνικός Καφές",
+            "en": "Greek Coffee"
+          },
+          "description": {
+            "el": "Σκέτος, μέτριος ή γλυκός",
+            "en": "Unsweetened, medium or sweet"
+          },
+          "price": "€2.00"
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "title": {
+        "el": "Γλυκά",
+        "en": "Desserts"
+      },
+      "items": [
+        {
+          "id": "baklava",
+          "name": {
+            "el": "Μπακλαβάς",
+            "en": "Baklava"
+          },
+          "description": {
+            "el": "Μέλι, ξηροί καρποί & φύλλο κρούστας",
+            "en": "Honey, nuts & phyllo pastry"
+          },
+          "allergens": {
+            "el": "⚠️ Περιέχει γλουτένη, ξηρούς καρπούς",
+            "en": "⚠️ Contains gluten, nuts"
+          },
+          "price": "€5.00",
+          "badge": {
+            "label": {
+              "el": "Παράδοση",
+              "en": "Heritage"
+            }
+          }
+        },
+        {
+          "id": "galaktoboureko",
+          "name": {
+            "el": "Γαλακτομπούρεκο",
+            "en": "Galaktoboureko"
+          },
+          "description": {
+            "el": "Κρέμα βανίλιας σε φύλλο με σιρόπι",
+            "en": "Custard cream pie with syrup"
+          },
+          "allergens": {
+            "el": "⚠️ Περιέχει γλουτένη, γαλακτοκομικά, αυγά",
+            "en": "⚠️ Contains gluten, dairy, eggs"
+          },
+          "price": "€5.50",
+          "badge": {
+            "label": {
+              "el": "Επιλογή Σεφ",
+              "en": "Chef's Selection"
+            }
+          }
+        },
+        {
+          "id": "loukoumades",
+          "name": {
+            "el": "Λουκουμάδες",
+            "en": "Loukoumades"
+          },
+          "description": {
+            "el": "Ζεστοί με μέλι, κανέλα & καρύδι",
+            "en": "Warm honey puffs with cinnamon & walnut"
+          },
+          "allergens": {
+            "el": "⚠️ Περιέχει γλουτένη, ξηρούς καρπούς",
+            "en": "⚠️ Contains gluten, nuts"
+          },
+          "price": "€4.50"
+        }
+      ]
+    }
+  ]
+}

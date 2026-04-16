@@ -1,73 +1,99 @@
-﻿# Venetsanos Restaurant - QR Menu Site
+﻿# Venetsanos Restaurant - React QR Menu Site
 
-A mobile-first, bilingual (Greek / English) digital menu designed to be accessed via QR code.
+A bilingual restaurant menu built with React and Vite. The menu content is loaded from `public/menu.json`, so you can update dishes and prices without touching the React code.
 
----
+## Project Structure
 
-## Files
+| File               | Purpose                                           |
+| ------------------ | ------------------------------------------------- |
+| `public/menu.json` | Menu sections, dishes, prices, text, badges       |
+| `src/App.jsx`      | Renders the menu from the JSON file               |
+| `src/styles.css`   | Styling for the menu page                         |
+| `public/menu.html` | Redirect so old QR links still work               |
+| `generate_qr.py`   | Python script to generate a QR code image locally |
 
-| File | Purpose |
-|---|---|
-| menu.html | The full menu page (open this in a browser) |
-| style.css | All styling (mobile-first, keep in same folder) |
-| generate_qr.py | Python script to generate a QR code image locally |
+## Local Development
 
----
+Install dependencies:
 
-## Step 1 - Host the Site on GitHub Pages (Free)
+```powershell
+npm install
+```
 
-Your repo is already on GitHub at https://github.com/anve96/restaurant-site
+Start the dev server:
 
-1. Go to your repo on GitHub: https://github.com/anve96/restaurant-site
-2. Click Settings (top tab)
-3. In the left sidebar, click Pages
-4. Under Branch, select main and folder / (root), then click Save
-5. Wait ~1 minute. Your live URL will be:
+```powershell
+npm run dev
+```
 
-    https://anve96.github.io/restaurant-site/menu.html
+Open the local URL shown in the terminal. Vite usually runs at `http://localhost:5173/restaurant-site/`.
 
-That URL is the one you encode into your QR code!
+## Updating Menu Items
 
----
+Edit only `public/menu.json`.
 
-## Step 2 - Generate the QR Code
+Each section has this shape:
 
-### Option A - Online (easiest)
-1. Go to https://goqr.me or https://qr-code-generator.com
-2. Paste your URL: https://anve96.github.io/restaurant-site/menu.html
-3. Download the QR image (PNG or SVG)
-4. Print it on table cards, menus, or a sign
+- `id`: anchor used in navigation
+- `title`: Greek and English section name
+- `items`: dish list
 
-### Option B - Generate locally with Python
+Each dish supports:
 
-    pip install qrcode[pil]
-    python generate_qr.py
+- `name`
+- `description`
+- `allergens`
+- `price`
+- `badge` (optional)
 
-This will create a file called menu_qr.png in the project folder.
+Example item:
 
----
+```json
+{
+  "id": "tzatziki",
+  "name": {
+    "el": "Τζατζίκι",
+    "en": "Tzatziki"
+  },
+  "description": {
+    "el": "Γιαούρτι, αγγούρι, σκόρδο & φρέσκο άνηθο",
+    "en": "Yogurt, cucumber, garlic & fresh dill"
+  },
+  "price": "€4.50"
+}
+```
 
-## Updating the Menu
+## Production Build
 
-1. Edit menu.html (change prices, add/remove dishes)
-2. Commit and push to GitHub:
+Create the deployable site:
 
-    git add menu.html
-    git commit -m "Update menu prices"
-    git push
+```powershell
+npm run build
+```
 
-The live page updates automatically. Your QR code stays the same!
+The output is generated in `dist/`.
 
----
+## GitHub Pages
 
-## Security Notes
+This project is configured for GitHub Pages with base path `/restaurant-site/`.
 
-- The site is static HTML - no database, no login, no user data collected
-- GitHub Pages serves over HTTPS automatically
-- Never put private info (passwords, keys) in these files
+After building, deploy the contents of `dist/` through GitHub Pages or a Pages workflow. The old QR path `menu.html` still works because `public/menu.html` redirects to the React app.
 
----
+The live URL should be:
 
-## Contact Info
+`https://anve96.github.io/restaurant-site/menu.html`
 
-Update the phone number and footer in menu.html before going live.
+## QR Code
+
+Online option:
+
+1. Go to `https://goqr.me` or `https://qr-code-generator.com`
+2. Paste `https://anve96.github.io/restaurant-site/menu.html`
+3. Download and print the QR code
+
+Local option:
+
+```powershell
+pip install qrcode[pil]
+python generate_qr.py
+```
