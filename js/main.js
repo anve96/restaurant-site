@@ -76,7 +76,7 @@ if (reservationForm) {
     if (successMsg) {
       successMsg.style.display = 'block';
       successMsg.querySelector('.booking-ref').textContent =
-        'REF-' + Math.random().toString(36).substr(2, 8).toUpperCase();
+        'REF-' + Math.random().toString(36).slice(2, 10).toUpperCase();
     }
   });
 }
@@ -156,7 +156,7 @@ if (preorderForm) {
     if (successMsg) {
       successMsg.style.display = 'block';
       successMsg.querySelector('.order-ref').textContent =
-        'ORD-' + Math.random().toString(36).substr(2, 8).toUpperCase();
+        'ORD-' + Math.random().toString(36).slice(2, 10).toUpperCase();
     }
   });
 }
