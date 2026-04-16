@@ -14,10 +14,8 @@
     <!-- ===== HEADER ===== -->
     <header>
       <div class="lang-toggle">
-        <button id="btn-el" class="active" onclick="setLang('el')">
-          🇬🇷 ΕΛ
-        </button>
-        <button id="btn-en" onclick="setLang('en')">🇬🇧 EN</button>
+        <button id="btn-el" class="active" onclick="setLang('el')">ΕΛ</button>
+        <button id="btn-en" onclick="setLang('en')">EN</button>
       </div>
       <h1>Venetsanos</h1>
       <p class="tagline">
@@ -31,20 +29,74 @@
 
     <!-- ===== CATEGORY NAV ===== -->
     <nav class="category-nav">
+      <a href="#salads"
+        ><span data-el="Σαλάτες" data-en="Salads">Σαλάτες</span></a
+      >
       <a href="#starters"
         ><span data-el="Ορεκτικά" data-en="Starters">Ορεκτικά</span></a
       >
       <a href="#mains"
         ><span data-el="Κυρίως" data-en="Main Dishes">Κυρίως</span></a
       >
-      <a href="#salads"
-        ><span data-el="Σαλάτες" data-en="Salads">Σαλάτες</span></a
-      >
+      <a href="#grilled"><span data-el="Ψητά" data-en="Grilled">Ψητά</span></a>
+      <a href="#drinks"><span data-el="Ποτά" data-en="Drinks">Ποτά</span></a>
       <a href="#desserts"
         ><span data-el="Γλυκά" data-en="Desserts">Γλυκά</span></a
       >
-      <a href="#drinks"><span data-el="Ποτά" data-en="Drinks">Ποτά</span></a>
     </nav>
+
+    <!-- ===== SALADS ===== -->
+    <div class="section" id="salads">
+      <h2>
+        <span data-el="Σαλάτες" data-en="Salads">Σαλάτες</span>
+      </h2>
+
+      <div class="menu-item">
+        <div class="info">
+          <h3>Χωριάτικη <span class="badge">Heritage</span></h3>
+          <p>
+            <span
+              data-el="Ντομάτα, αγγούρι, ελιές, φέτα & κρεμμύδι"
+              data-en="Tomato, cucumber, olives, feta & onion"
+              >Ντομάτα, αγγούρι, ελιές, φέτα & κρεμμύδι</span
+            >
+          </p>
+          <p class="allergens">
+            <span
+              data-el="⚠️ Περιέχει γαλακτοκομικά"
+              data-en="⚠️ Contains dairy"
+              >⚠️ Περιέχει γαλακτοκομικά</span
+            >
+          </p>
+        </div>
+        <span class="price">€7.00</span>
+      </div>
+
+      <div class="menu-item">
+        <div class="info">
+          <h3>
+            <span data-el="Ρόκα με Αχλάδι" data-en="Rocket & Pear"
+              >Ρόκα με Αχλάδι</span
+            >
+          </h3>
+          <p>
+            <span
+              data-el="Ρόκα, αχλάδι, καρύδια & βινεγκρέτ μπαλσάμικο"
+              data-en="Rocket, pear, walnuts & balsamic dressing"
+              >Ρόκα, αχλάδι, καρύδια & βινεγκρέτ μπαλσάμικο</span
+            >
+          </p>
+          <p class="allergens">
+            <span
+              data-el="⚠️ Περιέχει ξηρούς καρπούς"
+              data-en="⚠️ Contains nuts"
+              >⚠️ Περιέχει ξηρούς καρπούς</span
+            >
+          </p>
+        </div>
+        <span class="price">€8.00</span>
+      </div>
+    </div>
 
     <!-- ===== STARTERS ===== -->
     <div class="section" id="starters">
@@ -173,6 +225,53 @@
 
       <div class="menu-item">
         <div class="info">
+          <h3>Παστίτσιο</h3>
+          <p>
+            <span
+              data-el="Μακαρόνια με κιμά & μπεσαμέλ φούρνου"
+              data-en="Baked pasta with minced meat & béchamel"
+              >Μακαρόνια με κιμά & μπεσαμέλ φούρνου</span
+            >
+          </p>
+          <p class="allergens">
+            <span
+              data-el="⚠️ Περιέχει γλουτένη, γαλακτοκομικά, αυγά"
+              data-en="⚠️ Contains gluten, dairy, eggs"
+              >⚠️ Περιέχει γλουτένη, γαλακτοκομικά, αυγά</span
+            >
+          </p>
+        </div>
+        <span class="price">€12.00</span>
+      </div>
+
+      <div class="menu-item">
+        <div class="info">
+          <h3>Γαρίδες Σαγανάκι <span class="badge spicy">Piquant</span></h3>
+          <p>
+            <span
+              data-el="Γαρίδες σε σάλτσα ντομάτας, φέτα & μπαχαρικά"
+              data-en="Prawns in tomato sauce, feta & spices"
+              >Γαρίδες σε σάλτσα ντομάτας, φέτα & μπαχαρικά</span
+            >
+          </p>
+          <p class="allergens">
+            <span
+              data-el="⚠️ Περιέχει θαλασσινά, γαλακτοκομικά"
+              data-en="⚠️ Contains shellfish, dairy"
+              >⚠️ Περιέχει θαλασσινά, γαλακτοκομικά</span
+            >
+          </p>
+        </div>
+        <span class="price">€15.00</span>
+      </div>
+    </div>
+
+    <!-- ===== GRILLED ===== -->
+    <div class="section" id="grilled">
+      <h2><span data-el="Ψητά" data-en="Grilled">Ψητά</span></h2>
+
+      <div class="menu-item">
+        <div class="info">
           <h3>Ψητό Χταπόδι</h3>
           <p>
             <span
@@ -218,167 +317,6 @@
           </p>
         </div>
         <span class="price">€11.00</span>
-      </div>
-
-      <div class="menu-item">
-        <div class="info">
-          <h3>Παστίτσιο</h3>
-          <p>
-            <span
-              data-el="Μακαρόνια με κιμά & μπεσαμέλ φούρνου"
-              data-en="Baked pasta with minced meat & béchamel"
-              >Μακαρόνια με κιμά & μπεσαμέλ φούρνου</span
-            >
-          </p>
-          <p class="allergens">
-            <span
-              data-el="⚠️ Περιέχει γλουτένη, γαλακτοκομικά, αυγά"
-              data-en="⚠️ Contains gluten, dairy, eggs"
-              >⚠️ Περιέχει γλουτένη, γαλακτοκομικά, αυγά</span
-            >
-          </p>
-        </div>
-        <span class="price">€12.00</span>
-      </div>
-
-      <div class="menu-item">
-        <div class="info">
-          <h3>Γαρίδες Σαγανάκι <span class="badge spicy">Piquant</span></h3>
-          <p>
-            <span
-              data-el="Γαρίδες σε σάλτσα ντομάτας, φέτα & μπαχαρικά"
-              data-en="Prawns in tomato sauce, feta & spices"
-              >Γαρίδες σε σάλτσα ντομάτας, φέτα & μπαχαρικά</span
-            >
-          </p>
-          <p class="allergens">
-            <span
-              data-el="⚠️ Περιέχει θαλασσινά, γαλακτοκομικά"
-              data-en="⚠️ Contains shellfish, dairy"
-              >⚠️ Περιέχει θαλασσινά, γαλακτοκομικά</span
-            >
-          </p>
-        </div>
-        <span class="price">€15.00</span>
-      </div>
-    </div>
-
-    <!-- ===== SALADS ===== -->
-    <div class="section" id="salads">
-      <h2><span data-el="Σαλάτες" data-en="Salads">Σαλάτες</span></h2>
-
-      <div class="menu-item">
-        <div class="info">
-          <h3>Χωριάτικη <span class="badge">Heritage</span></h3>
-          <p>
-            <span
-              data-el="Ντομάτα, αγγούρι, ελιές, φέτα & κρεμμύδι"
-              data-en="Tomato, cucumber, olives, feta & onion"
-              >Ντομάτα, αγγούρι, ελιές, φέτα & κρεμμύδι</span
-            >
-          </p>
-          <p class="allergens">
-            <span
-              data-el="⚠️ Περιέχει γαλακτοκομικά"
-              data-en="⚠️ Contains dairy"
-              >⚠️ Περιέχει γαλακτοκομικά</span
-            >
-          </p>
-        </div>
-        <span class="price">€7.00</span>
-      </div>
-
-      <div class="menu-item">
-        <div class="info">
-          <h3>
-            <span data-el="Ρόκα με Αχλάδι" data-en="Rocket & Pear"
-              >Ρόκα με Αχλάδι</span
-            >
-          </h3>
-          <p>
-            <span
-              data-el="Ρόκα, αχλάδι, καρύδια & βινεγκρέτ μπαλσάμικο"
-              data-en="Rocket, pear, walnuts & balsamic dressing"
-              >Ρόκα, αχλάδι, καρύδια & βινεγκρέτ μπαλσάμικο</span
-            >
-          </p>
-          <p class="allergens">
-            <span
-              data-el="⚠️ Περιέχει ξηρούς καρπούς"
-              data-en="⚠️ Contains nuts"
-              >⚠️ Περιέχει ξηρούς καρπούς</span
-            >
-          </p>
-        </div>
-        <span class="price">€8.00</span>
-      </div>
-    </div>
-
-    <!-- ===== DESSERTS ===== -->
-    <div class="section" id="desserts">
-      <h2><span data-el="Γλυκά" data-en="Desserts">Γλυκά</span></h2>
-
-      <div class="menu-item">
-        <div class="info">
-          <h3>Μπακλαβάς <span class="badge">Heritage</span></h3>
-          <p>
-            <span
-              data-el="Μέλι, ξηροί καρποί & φύλλο κρούστας"
-              data-en="Honey, nuts & phyllo pastry"
-              >Μέλι, ξηροί καρποί & φύλλο κρούστας</span
-            >
-          </p>
-          <p class="allergens">
-            <span
-              data-el="⚠️ Περιέχει γλουτένη, ξηρούς καρπούς"
-              data-en="⚠️ Contains gluten, nuts"
-              >⚠️ Περιέχει γλουτένη, ξηρούς καρπούς</span
-            >
-          </p>
-        </div>
-        <span class="price">€5.00</span>
-      </div>
-
-      <div class="menu-item">
-        <div class="info">
-          <h3>Γαλακτομπούρεκο <span class="badge">Chef's Selection</span></h3>
-          <p>
-            <span
-              data-el="Κρέμα βανίλιας σε φύλλο με σιρόπι"
-              data-en="Custard cream pie with syrup"
-              >Κρέμα βανίλιας σε φύλλο με σιρόπι</span
-            >
-          </p>
-          <p class="allergens">
-            <span
-              data-el="⚠️ Περιέχει γλουτένη, γαλακτοκομικά, αυγά"
-              data-en="⚠️ Contains gluten, dairy, eggs"
-              >⚠️ Περιέχει γλουτένη, γαλακτοκομικά, αυγά</span
-            >
-          </p>
-        </div>
-        <span class="price">€5.50</span>
-      </div>
-
-      <div class="menu-item">
-        <div class="info">
-          <h3>Λουκουμάδες</h3>
-          <p>
-            <span
-              data-el="Ζεστοί με μέλι, κανέλα & καρύδι"
-              data-en="Warm honey puffs with cinnamon & walnut"
-              >Ζεστοί με μέλι, κανέλα & καρύδι</span
-            >
-          </p>
-          <p class="allergens">
-            <span
-              data-el="⚠️ Περιέχει γλουτένη, ξηρούς καρπούς"
-              data-en="⚠️ Contains gluten, nuts"
-              >⚠️ Περιέχει γλουτένη, ξηρούς καρπούς</span
-            >
-          </p>
-        </div>
-        <span class="price">€4.50</span>
       </div>
     </div>
 
@@ -462,13 +400,81 @@
       </div>
     </div>
 
+    <!-- ===== DESSERTS ===== -->
+    <div class="section" id="desserts">
+      <h2><span data-el="Γλυκά" data-en="Desserts">Γλυκά</span></h2>
+
+      <div class="menu-item">
+        <div class="info">
+          <h3>Μπακλαβάς <span class="badge">Heritage</span></h3>
+          <p>
+            <span
+              data-el="Μέλι, ξηροί καρποί & φύλλο κρούστας"
+              data-en="Honey, nuts & phyllo pastry"
+              >Μέλι, ξηροί καρποί & φύλλο κρούστας</span
+            >
+          </p>
+          <p class="allergens">
+            <span
+              data-el="⚠️ Περιέχει γλουτένη, ξηρούς καρπούς"
+              data-en="⚠️ Contains gluten, nuts"
+              >⚠️ Περιέχει γλουτένη, ξηρούς καρπούς</span
+            >
+          </p>
+        </div>
+        <span class="price">€5.00</span>
+      </div>
+
+      <div class="menu-item">
+        <div class="info">
+          <h3>Γαλακτομπούρεκο <span class="badge">Chef's Selection</span></h3>
+          <p>
+            <span
+              data-el="Κρέμα βανίλιας σε φύλλο με σιρόπι"
+              data-en="Custard cream pie with syrup"
+              >Κρέμα βανίλιας σε φύλλο με σιρόπι</span
+            >
+          </p>
+          <p class="allergens">
+            <span
+              data-el="⚠️ Περιέχει γλουτένη, γαλακτοκομικά, αυγά"
+              data-en="⚠️ Contains gluten, dairy, eggs"
+              >⚠️ Περιέχει γλουτένη, γαλακτοκομικά, αυγά</span
+            >
+          </p>
+        </div>
+        <span class="price">€5.50</span>
+      </div>
+
+      <div class="menu-item">
+        <div class="info">
+          <h3>Λουκουμάδες</h3>
+          <p>
+            <span
+              data-el="Ζεστοί με μέλι, κανέλα & καρύδι"
+              data-en="Warm honey puffs with cinnamon & walnut"
+              >Ζεστοί με μέλι, κανέλα & καρύδι</span
+            >
+          </p>
+          <p class="allergens">
+            <span
+              data-el="⚠️ Περιέχει γλουτένη, ξηρούς καρπούς"
+              data-en="⚠️ Contains gluten, nuts"
+              >⚠️ Περιέχει γλουτένη, ξηρούς καρπούς</span
+            >
+          </p>
+        </div>
+        <span class="price">€4.50</span>
+      </div>
+    </div>
+
     <!-- ===== FOOTER ===== -->
     <footer>
       <p>
         © 2026 Venetsanos Restaurant &nbsp;·&nbsp;
         <a href="tel:+302101234567">+30 210 123 4567</a>
       </p>
-      <p style="margin-top: 6px">
+      <p class="footer-note">
         <span
           data-el="Τιμές συμπεριλαμβάνουν ΦΠΑ"
           data-en="All prices include VAT"
