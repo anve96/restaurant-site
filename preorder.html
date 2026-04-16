@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pre-Order Food – La Famiglia Restaurant</title>
+  <meta name="description" content="Pre-order your favourite La Famiglia dishes for convenient pickup. Choose your items, pick a date, and we'll have them fresh and ready for you." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="La Famiglia Home">
+        <span class="logo-icon" aria-hidden="true">🍝</span>
+        <span class="logo-text">La <span>Famiglia</span></span>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="reservations.html" class="btn-reserve">Reserve a Table</a></li>
+        <li><a href="preorder.html" class="btn-preorder">Pre-Order</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <h1>Pre-Order Food</h1>
+    <p>Choose your dishes, set a pickup time, and we'll have your meal fresh and ready.</p>
+  </section>
+
+  <!-- ===== PRE-ORDER SECTION ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="preorder-layout">
+
+        <!-- Food selector -->
+        <div class="order-menu">
+          <h2>Select Your Dishes</h2>
+          <p>Use the + / − buttons to choose quantities. Your order summary updates automatically.</p>
+
+          <div class="order-items">
+
+            <div class="order-item">
+              <span class="food-icon" aria-hidden="true">🍝</span>
+              <div class="order-item-info">
+                <h4>Spaghetti Carbonara</h4>
+                <p>Guanciale, egg yolk, Pecorino Romano</p>
+              </div>
+              <span class="order-item-price">$19</span>
+              <div class="qty-control" role="group" aria-label="Quantity for Spaghetti Carbonara">
+                <button class="qty-btn minus" aria-label="Decrease quantity">−</button>
+                <span class="qty-display" aria-live="polite">0</span>
+                <button class="qty-btn plus" aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+
+            <div class="order-item">
+              <span class="food-icon" aria-hidden="true">🍅</span>
+              <div class="order-item-info">
+                <h4>Pappardelle al Ragù</h4>
+                <p>8-hour slow-cooked beef and pork ragù</p>
+              </div>
+              <span class="order-item-price">$22</span>
+              <div class="qty-control" role="group" aria-label="Quantity for Pappardelle al Ragù">
+                <button class="qty-btn minus" aria-label="Decrease quantity">−</button>
+                <span class="qty-display" aria-live="polite">0</span>
+                <button class="qty-btn plus" aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+
+            <div class="order-item">
+              <span class="food-icon" aria-hidden="true">🧅</span>
+              <div class="order-item-info">
+                <h4>Lasagne della Casa</h4>
+                <p>Fresh pasta, ragù, béchamel, mozzarella</p>
+              </div>
+              <span class="order-item-price">$21</span>
+              <div class="qty-control" role="group" aria-label="Quantity for Lasagne della Casa">
+                <button class="qty-btn minus" aria-label="Decrease quantity">−</button>
+                <span class="qty-display" aria-live="polite">0</span>
+                <button class="qty-btn plus" aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+
+            <div class="order-item">
+              <span class="food-icon" aria-hidden="true">🍕</span>
+              <div class="order-item-info">
+                <h4>Margherita Pizza</h4>
+                <p>San Marzano tomato, fior di latte, basil</p>
+              </div>
+              <span class="order-item-price">$16</span>
+              <div class="qty-control" role="group" aria-label="Quantity for Margherita Pizza">
+                <button class="qty-btn minus" aria-label="Decrease quantity">−</button>
+                <span class="qty-display" aria-live="polite">0</span>
+                <button class="qty-btn plus" aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+
+            <div class="order-item">
+              <span class="food-icon" aria-hidden="true">🥓</span>
+              <div class="order-item-info">
+                <h4>Diavola Pizza</h4>
+                <p>Tomato, mozzarella, spicy Calabrian salami</p>
+              </div>
+              <span class="order-item-price">$19</span>
+              <div class="qty-control" role="group" aria-label="Quantity for Diavola Pizza">
+                <button class="qty-btn minus" aria-label="Decrease quantity">−</button>
+                <span class="qty-display" aria-live="polite">0</span>
+                <button class="qty-btn plus" aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+
+            <div class="order-item">
+              <span class="food-icon" aria-hidden="true">🍗</span>
+              <div class="order-item-info">
+                <h4>Chicken Parmigiana</h4>
+                <p>Crumbed chicken, tomato sauce, mozzarella</p>
+              </div>
+              <span class="order-item-price">$25</span>
+              <div class="qty-control" role="group" aria-label="Quantity for Chicken Parmigiana">
+                <button class="qty-btn minus" aria-label="Decrease quantity">−</button>
+                <span class="qty-display" aria-live="polite">0</span>
+                <button class="qty-btn plus" aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+
+            <div class="order-item">
+              <span class="food-icon" aria-hidden="true">🍚</span>
+              <div class="order-item-info">
+                <h4>Arancini di Riso (×4)</h4>
+                <p>Crispy risotto balls with marinara</p>
+              </div>
+              <span class="order-item-price">$12</span>
+              <div class="qty-control" role="group" aria-label="Quantity for Arancini di Riso">
+                <button class="qty-btn minus" aria-label="Decrease quantity">−</button>
+                <span class="qty-display" aria-live="polite">0</span>
+                <button class="qty-btn plus" aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+
+            <div class="order-item">
+              <span class="food-icon" aria-hidden="true">☕</span>
+              <div class="order-item-info">
+                <h4>Tiramisù della Nonna</h4>
+                <p>Nonna's original tiramisu (one portion)</p>
+              </div>
+              <span class="order-item-price">$10</span>
+              <div class="qty-control" role="group" aria-label="Quantity for Tiramisù della Nonna">
+                <button class="qty-btn minus" aria-label="Decrease quantity">−</button>
+                <span class="qty-display" aria-live="polite">0</span>
+                <button class="qty-btn plus" aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+
+            <div class="order-item">
+              <span class="food-icon" aria-hidden="true">🍦</span>
+              <div class="order-item-info">
+                <h4>Cannoli Siciliani (pair)</h4>
+                <p>Crispy shells with sweetened ricotta</p>
+              </div>
+              <span class="order-item-price">$10</span>
+              <div class="qty-control" role="group" aria-label="Quantity for Cannoli Siciliani">
+                <button class="qty-btn minus" aria-label="Decrease quantity">−</button>
+                <span class="qty-display" aria-live="polite">0</span>
+                <button class="qty-btn plus" aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+
+            <div class="order-item">
+              <span class="food-icon" aria-hidden="true">🍋</span>
+              <div class="order-item-info">
+                <h4>Limonata (Italian Lemonade)</h4>
+                <p>Fresh-squeezed, still or sparkling</p>
+              </div>
+              <span class="order-item-price">$5</span>
+              <div class="qty-control" role="group" aria-label="Quantity for Limonata">
+                <button class="qty-btn minus" aria-label="Decrease quantity">−</button>
+                <span class="qty-display" aria-live="polite">0</span>
+                <button class="qty-btn plus" aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+
+          </div>
+
+          <p style="margin-top:1.5rem; font-size:0.85rem; color:var(--text-light);">
+            For a full list of our menu items, <a href="menu.html" style="color:var(--primary); font-weight:bold;">visit the menu page</a>.
+          </p>
+        </div>
+
+        <!-- Order form -->
+        <div class="order-form">
+          <h2>Your Order Details</h2>
+          <p>Fill in your details and we'll have your order ready for collection at the specified time.</p>
+
+          <!-- Live order summary -->
+          <div class="order-summary" aria-live="polite" aria-label="Order summary">
+            <h4>🛒 Order Summary</h4>
+            <p class="order-summary-items" id="summaryItems">No items selected yet.</p>
+            <p class="order-total" id="orderTotal">Total: $0.00</p>
+          </div>
+
+          <form id="preorderForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="po-name">Full Name <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="po-name" name="name" placeholder="e.g. Giovanni Russo" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="po-phone">Phone Number <span class="required" aria-hidden="true">*</span></label>
+                <input type="tel" id="po-phone" name="phone" placeholder="(718) 555-0100" required autocomplete="tel" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="po-email">Email Address</label>
+              <input type="email" id="po-email" name="email" placeholder="you@example.com" autocomplete="email" />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="po-pickup">Pickup Date <span class="required" aria-hidden="true">*</span></label>
+                <input type="date" id="po-pickup" name="pickup-date" required />
+              </div>
+              <div class="form-group">
+                <label for="po-time">Pickup Time <span class="required" aria-hidden="true">*</span></label>
+                <select id="po-time" name="pickup-time" required>
+                  <option value="">Select pickup time</option>
+                  <option value="11:30">11:30 AM</option>
+                  <option value="12:00">12:00 PM</option>
+                  <option value="12:30">12:30 PM</option>
+                  <option value="13:00">1:00 PM</option>
+                  <option value="13:30">1:30 PM</option>
+                  <option value="14:00">2:00 PM</option>
+                  <option value="14:30">2:30 PM</option>
+                  <option value="17:00">5:00 PM</option>
+                  <option value="17:30">5:30 PM</option>
+                  <option value="18:00">6:00 PM</option>
+                  <option value="18:30">6:30 PM</option>
+                  <option value="19:00">7:00 PM</option>
+                  <option value="19:30">7:30 PM</option>
+                  <option value="20:00">8:00 PM</option>
+                  <option value="20:30">8:30 PM</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="po-notes">Special Instructions or Dietary Notes</label>
+              <textarea id="po-notes" name="notes" placeholder="E.g. no onions, extra sauce, gluten-free option needed…"></textarea>
+            </div>
+
+            <button type="submit" class="form-submit">Place Pre-Order</button>
+          </form>
+
+          <!-- Success message -->
+          <div class="success-message" id="preorderSuccess" role="alert" aria-live="polite">
+            <span class="success-icon" aria-hidden="true">🎊</span>
+            <strong>Your pre-order is confirmed!</strong><br />
+            Order reference: <strong class="order-ref"></strong><br /><br />
+            We'll have your food fresh and ready at the pickup time you selected. See you soon!
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Prefer to Dine In?</h2>
+      <p>Book a table and enjoy the full La Famiglia experience in our cozy, family-friendly dining room.</p>
+      <a href="reservations.html" class="btn btn-primary">Reserve a Table</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-text">La <span>Famiglia</span></span>
+        <p>A family restaurant serving homemade Italian-American food with heart since 1987. Every dish is made with fresh ingredients and a whole lot of love.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="preorder.html">Pre-Order</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <p>Mon – Thu: 11 am – 9 pm<br />
+           Fri – Sat: 11 am – 10 pm<br />
+           Sunday: 12 pm – 8 pm</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>📍 123 Olive Street<br />Brooklyn, NY 11201<br /><br />
+           📞 (718) 555-0192<br /><br />
+           ✉️ hello@lafamiglia.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 La Famiglia Restaurant. All rights reserved. Made with ❤️ by the family.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

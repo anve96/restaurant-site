@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Menu – La Famiglia Restaurant</title>
+  <meta name="description" content="Browse La Famiglia's full menu: handmade pastas, wood-fired pizzas, hearty mains, salads, desserts, and drinks." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="La Famiglia Home">
+        <span class="logo-icon" aria-hidden="true">🍝</span>
+        <span class="logo-text">La <span>Famiglia</span></span>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="reservations.html" class="btn-reserve">Reserve a Table</a></li>
+        <li><a href="preorder.html" class="btn-preorder">Pre-Order</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <h1>Our Menu</h1>
+    <p>Fresh, homemade Italian-American classics prepared daily from scratch.</p>
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Category tabs -->
+      <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+        <button class="menu-tab active" data-target="starters" role="tab" aria-selected="true" aria-controls="starters">Starters</button>
+        <button class="menu-tab" data-target="pasta" role="tab" aria-selected="false" aria-controls="pasta">Pasta</button>
+        <button class="menu-tab" data-target="pizza" role="tab" aria-selected="false" aria-controls="pizza">Pizza</button>
+        <button class="menu-tab" data-target="mains" role="tab" aria-selected="false" aria-controls="mains">Mains</button>
+        <button class="menu-tab" data-target="desserts" role="tab" aria-selected="false" aria-controls="desserts">Desserts</button>
+        <button class="menu-tab" data-target="drinks" role="tab" aria-selected="false" aria-controls="drinks">Drinks</button>
+      </div>
+
+      <!-- ---- STARTERS ---- -->
+      <div class="menu-category active" id="starters" role="tabpanel">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🍞</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Bruschetta al Pomodoro</h3>
+                <span class="price">$9</span>
+              </div>
+              <span class="tag">Vegetarian</span>
+              <p>Toasted sourdough with fresh tomatoes, basil, garlic, and a drizzle of extra-virgin olive oil.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🧀</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Caprese Salad</h3>
+                <span class="price">$13</span>
+              </div>
+              <span class="tag">Vegetarian · Gluten-Free</span>
+              <p>Buffalo mozzarella, heirloom tomatoes, fresh basil, aged balsamic, and Sicilian olive oil.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🍚</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Arancini di Riso</h3>
+                <span class="price">$12</span>
+              </div>
+              <span class="tag">Vegetarian</span>
+              <p>Crispy fried risotto balls stuffed with mozzarella and peas, served with marinara dipping sauce.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🦑</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Calamari Fritti</h3>
+                <span class="price">$15</span>
+              </div>
+              <span class="tag">Seafood</span>
+              <p>Lightly battered and fried calamari with lemon aioli and a mixed herb salad.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🥣</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Ribollita Soup</h3>
+                <span class="price">$11</span>
+              </div>
+              <span class="tag">Vegan</span>
+              <p>Classic Tuscan bread-and-vegetable soup with cannellini beans, kale, and crusty bread.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🧆</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Polpette al Sugo</h3>
+                <span class="price">$14</span>
+              </div>
+              <span class="tag">Chef's Favourite</span>
+              <p>Slow-cooked beef and pork meatballs in Nonna's famous tomato sauce, topped with Parmigiano.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- PASTA ---- -->
+      <div class="menu-category" id="pasta" role="tabpanel">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🍝</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Spaghetti Carbonara</h3>
+                <span class="price">$19</span>
+              </div>
+              <span class="tag">House Favourite</span>
+              <p>Classic Roman carbonara with guanciale, egg yolk, Pecorino Romano, and freshly cracked black pepper.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🍅</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Pappardelle al Ragù</h3>
+                <span class="price">$22</span>
+              </div>
+              <span class="tag">Slow-cooked</span>
+              <p>Wide ribbons of hand-rolled pasta with a rich 8-hour slow-cooked beef and pork ragù.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🥬</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Ricotta Gnocchi</h3>
+                <span class="price">$18</span>
+              </div>
+              <span class="tag">Vegetarian</span>
+              <p>Pillowy hand-rolled gnocchi with ricotta, sage brown butter, and shaved Parmigiano Reggiano.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🦐</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Linguine alle Vongole</h3>
+                <span class="price">$24</span>
+              </div>
+              <span class="tag">Seafood</span>
+              <p>Fresh linguine with baby clams, white wine, garlic, chilli, and parsley.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🧅</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Lasagne della Casa</h3>
+                <span class="price">$21</span>
+              </div>
+              <span class="tag">Nonna's Recipe</span>
+              <p>Layers of fresh pasta, beef ragù, béchamel, and mozzarella baked golden in the oven.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🍄</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Tagliatelle ai Funghi</h3>
+                <span class="price">$20</span>
+              </div>
+              <span class="tag">Vegetarian</span>
+              <p>Egg tagliatelle with wild mushrooms, truffle oil, garlic, and a touch of cream.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- PIZZA ---- -->
+      <div class="menu-category" id="pizza" role="tabpanel">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🍕</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Margherita</h3>
+                <span class="price">$16</span>
+              </div>
+              <span class="tag">Vegetarian · Classic</span>
+              <p>San Marzano tomato, fior di latte mozzarella, fresh basil, and extra-virgin olive oil.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🥓</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Diavola</h3>
+                <span class="price">$19</span>
+              </div>
+              <span class="tag">Spicy</span>
+              <p>Tomato, mozzarella, spicy Calabrian salami, chilli flakes, and fresh basil.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🌿</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Quattro Formaggi</h3>
+                <span class="price">$20</span>
+              </div>
+              <span class="tag">Vegetarian</span>
+              <p>Mozzarella, gorgonzola, Taleggio, and Parmigiano Reggiano on a white base with walnuts.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🥩</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Famiglia Special</h3>
+                <span class="price">$23</span>
+              </div>
+              <span class="tag">Chef's Choice</span>
+              <p>Tomato, mozzarella, prosciutto cotto, mushrooms, peppers, and Italian sausage.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🧅</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Prosciutto e Rucola</h3>
+                <span class="price">$22</span>
+              </div>
+              <span class="tag">Popular</span>
+              <p>Tomato, mozzarella, San Daniele prosciutto, rocket, Parmigiano shavings, and lemon oil.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🌱</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Ortolana (Veggie)</h3>
+                <span class="price">$18</span>
+              </div>
+              <span class="tag">Vegan-friendly</span>
+              <p>Tomato, seasonal roasted vegetables, olives, capers, and fresh basil — no cheese option available.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- MAINS ---- -->
+      <div class="menu-category" id="mains" role="tabpanel">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🍗</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Chicken Parmigiana</h3>
+                <span class="price">$25</span>
+              </div>
+              <span class="tag">American-Italian Classic</span>
+              <p>Crumbed free-range chicken breast topped with tomato sauce, melted mozzarella, and Parmigiano.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🥩</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Osso Buco alla Milanese</h3>
+                <span class="price">$34</span>
+              </div>
+              <span class="tag">Slow-cooked · Gluten-Free</span>
+              <p>Braised veal shank with gremolata, served with saffron risotto alla Milanese.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🐟</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Branzino al Forno</h3>
+                <span class="price">$30</span>
+              </div>
+              <span class="tag">Seafood · Gluten-Free</span>
+              <p>Oven-roasted sea bass with lemon, capers, olives, and seasonal vegetables.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🍖</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Tagliata di Manzo</h3>
+                <span class="price">$38</span>
+              </div>
+              <span class="tag">Premium</span>
+              <p>Sliced grilled ribeye with rocket, cherry tomatoes, shaved Parmigiano, and truffle oil.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- DESSERTS ---- -->
+      <div class="menu-category" id="desserts" role="tabpanel">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">☕</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Tiramisù della Nonna</h3>
+                <span class="price">$10</span>
+              </div>
+              <span class="tag">Signature Dessert</span>
+              <p>Nonna Rosaria's original tiramisù with espresso-soaked ladyfingers, mascarpone, and cocoa.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🍮</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Panna Cotta</h3>
+                <span class="price">$9</span>
+              </div>
+              <span class="tag">Gluten-Free</span>
+              <p>Silky vanilla panna cotta served with a fresh berry coulis and candied pistachios.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🍦</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Cannoli Siciliani</h3>
+                <span class="price">$10</span>
+              </div>
+              <span class="tag">Traditional</span>
+              <p>Crispy shells filled with sweetened ricotta, chocolate chips, and candied orange peel. Served as a pair.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🍫</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Fondente al Cioccolato</h3>
+                <span class="price">$12</span>
+              </div>
+              <span class="tag">Kids' Favourite</span>
+              <p>Warm dark chocolate lava cake with a molten centre, served with vanilla gelato.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- DRINKS ---- -->
+      <div class="menu-category" id="drinks" role="tabpanel">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🍷</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>House Red Wine</h3>
+                <span class="price">$9/glass</span>
+              </div>
+              <span class="tag">Chianti Classico</span>
+              <p>A full-bodied Chianti Classico from Tuscany with notes of cherry, herbs, and light tannins.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🥂</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>House White Wine</h3>
+                <span class="price">$9/glass</span>
+              </div>
+              <span class="tag">Pinot Grigio</span>
+              <p>Crisp and refreshing Pinot Grigio from the Friuli region with citrus and apple notes.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">🍋</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Limonata</h3>
+                <span class="price">$5</span>
+              </div>
+              <span class="tag">Non-Alcoholic</span>
+              <p>Fresh-squeezed Italian-style lemonade with a hint of mint. Still or sparkling.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-image" aria-hidden="true">☕</div>
+            <div class="menu-item-body">
+              <div class="menu-item-header">
+                <h3>Italian Espresso</h3>
+                <span class="price">$4</span>
+              </div>
+              <span class="tag">Lavazza Blend</span>
+              <p>Rich, velvety espresso sourced from Lavazza's finest Arabica blends. Single or double shot.</p>
+              <a href="preorder.html" class="btn-add-order">Add to Pre-Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Eat?</h2>
+      <p>Reserve a table for a full dine-in experience, or pre-order your favourites for easy pickup.</p>
+      <div class="hero-buttons">
+        <a href="reservations.html" class="btn btn-primary">Reserve a Table</a>
+        <a href="preorder.html" class="btn btn-secondary">Pre-Order Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-text">La <span>Famiglia</span></span>
+        <p>A family restaurant serving homemade Italian-American food with heart since 1987. Every dish is made with fresh ingredients and a whole lot of love.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="preorder.html">Pre-Order</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <p>Mon – Thu: 11 am – 9 pm<br />
+           Fri – Sat: 11 am – 10 pm<br />
+           Sunday: 12 pm – 8 pm</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>📍 123 Olive Street<br />Brooklyn, NY 11201<br /><br />
+           📞 (718) 555-0192<br /><br />
+           ✉️ hello@lafamiglia.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 La Famiglia Restaurant. All rights reserved. Made with ❤️ by the family.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
